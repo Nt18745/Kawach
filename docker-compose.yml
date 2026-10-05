@@ -1,0 +1,27 @@
+services:
+  kawach-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kawach-safety-network
+    restart: always
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - PYTHON_PORT=8000
+      - SMS_PROVIDER=console_fallback
+      - STORAGE_BUCKET_NAME=ai-studio-kawach-vault
+    volumes:
+      - kawach-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  kawach-data:
+    driver: local

@@ -1,0 +1,165 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile, safety configurations and preferences",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "phone": { "type": "string", "maxLength": 32 },
+        "name": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 128 },
+        "bloodGroup": { "type": "string", "maxLength": 10 },
+        "preferredLanguage": { "type": "string", "maxLength": 10 },
+        "voiceEmergencyPhrase": { "type": "string", "maxLength": 128 },
+        "countdownSeconds": { "type": "number" },
+        "darkMode": { "type": "boolean" },
+        "highContrastMode": { "type": "boolean" },
+        "lowBatteryMode": { "type": "boolean" },
+        "themeVariant": { "type": "string", "maxLength": 20 },
+        "createdAt": { "type": "string", "maxLength": 64 },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["uid", "name"]
+    },
+    "TrustedContact": {
+      "title": "TrustedContact",
+      "description": "Trusted emergency contact details for alerting",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 128 },
+        "phone": { "type": "string", "maxLength": 32 },
+        "relationship": { "type": "string", "maxLength": 64 },
+        "priority": { "type": "string", "maxLength": 20 },
+        "verificationStatus": { "type": "string", "maxLength": 20 },
+        "createdAt": { "type": "string", "maxLength": 64 },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "userId", "name", "phone"]
+    },
+    "EmergencySession": {
+      "title": "EmergencySession",
+      "description": "Active or historical emergency SOS session",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "status": { "type": "string", "maxLength": 32 },
+        "triggerType": { "type": "string", "maxLength": 64 },
+        "startedAt": { "type": "string", "maxLength": 64 },
+        "expiresAt": { "type": "string", "maxLength": 64 },
+        "cancelledAt": { "type": "string", "maxLength": 64 },
+        "cancellationReason": { "type": "string", "maxLength": 256 },
+        "shareToken": { "type": "string", "maxLength": 128 },
+        "contactsNotifiedCount": { "type": "number" },
+        "contactsTotalCount": { "type": "number" },
+        "officialEmergencyNumberDialed": { "type": "string", "maxLength": 16 },
+        "officialEmergencyCallStatus": { "type": "string", "maxLength": 64 },
+        "initialLocation": { "type": "object" },
+        "lastKnownLocation": { "type": "object" },
+        "locationUpdateCount": { "type": "number" }
+      },
+      "required": ["id", "userId", "status", "startedAt", "shareToken"]
+    },
+    "LocationUpdate": {
+      "title": "LocationUpdate",
+      "description": "Periodic breadcrumb coordinate recorded during SOS",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "sessionId": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "accuracy": { "type": "number" },
+        "address": { "type": "string", "maxLength": 256 },
+        "timestamp": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "sessionId", "userId", "latitude", "longitude", "timestamp"]
+    },
+    "PublicShare": {
+      "title": "PublicShare",
+      "description": "Ephemeral live tracking record accessed by emergency token",
+      "type": "object",
+      "properties": {
+        "shareToken": { "type": "string", "maxLength": 128 },
+        "sessionId": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "userName": { "type": "string", "maxLength": 128 },
+        "userPhone": { "type": "string", "maxLength": 32 },
+        "active": { "type": "boolean" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "accuracy": { "type": "number" },
+        "address": { "type": "string", "maxLength": 256 },
+        "expiresAt": { "type": "string", "maxLength": 64 },
+        "lastUpdated": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["shareToken", "sessionId", "userId", "active", "expiresAt"]
+    },
+    "SafetyTimer": {
+      "title": "SafetyTimer",
+      "description": "Timed check-in monitor that activates SOS on expiry",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "destination": { "type": "string", "maxLength": 256 },
+        "durationMinutes": { "type": "number" },
+        "startTime": { "type": "string", "maxLength": 64 },
+        "targetEndTime": { "type": "string", "maxLength": 64 },
+        "status": { "type": "string", "maxLength": 32 },
+        "lastCheckIn": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "userId", "destination", "durationMinutes", "startTime", "status"]
+    },
+    "Journey": {
+      "title": "Journey",
+      "description": "Active route travel tracking session",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "startLocationName": { "type": "string", "maxLength": 256 },
+        "destinationName": { "type": "string", "maxLength": 256 },
+        "startTime": { "type": "string", "maxLength": 64 },
+        "endTime": { "type": "string", "maxLength": 64 },
+        "status": { "type": "string", "maxLength": 32 },
+        "shareToken": { "type": "string", "maxLength": 128 }
+      },
+      "required": ["id", "userId", "startLocationName", "destinationName", "startTime", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile documents restricted to owner"
+    },
+    "/users/{userId}/contacts/{contactId}": {
+      "schema": "TrustedContact",
+      "description": "Trusted emergency contacts subcollection for the user"
+    },
+    "/users/{userId}/safety_timers/{timerId}": {
+      "schema": "SafetyTimer",
+      "description": "Safety timers configured by the user"
+    },
+    "/users/{userId}/journeys/{journeyId}": {
+      "schema": "Journey",
+      "description": "Safe travel journeys started by the user"
+    },
+    "/emergency_sessions/{sessionId}": {
+      "schema": "EmergencySession",
+      "description": "Emergency SOS sessions"
+    },
+    "/emergency_sessions/{sessionId}/location_updates/{updateId}": {
+      "schema": "LocationUpdate",
+      "description": "Breadcrumb location updates for an active emergency session"
+    },
+    "/public_shares/{shareToken}": {
+      "schema": "PublicShare",
+      "description": "Ephemeral live location share token readable by token holders and writable by session owner"
+    }
+  }
+}

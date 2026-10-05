@@ -1,0 +1,332 @@
+{
+  "user": {
+    "id": "usr-01",
+    "name": "Mani Ranjan Thakur",
+    "phone": "+91-98765-43210",
+    "email": "maniranjanthakur59@gmail.com",
+    "bloodGroup": "O+",
+    "emergencyMedicalNotes": "Emergency personal profile configured for Mani Ranjan Thakur",
+    "countdownSeconds": 3,
+    "preferredLanguage": "en",
+    "themeVariant": "crimson",
+    "pinHash": "f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75",
+    "darkMode": true,
+    "highContrast": false,
+    "age": 24,
+    "isMinor": false,
+    "guardianConsentVerified": true
+  },
+  "contacts": [
+    {
+      "id": "cnt-01",
+      "name": "Priya Sharma (Sister)",
+      "phone": "+91-98111-22334",
+      "relationship": "Sister",
+      "isEmergencyContact": true,
+      "priority": 1,
+      "alertsEnabled": true
+    },
+    {
+      "id": "cnt-02",
+      "name": "Vikram Sharma (Father)",
+      "phone": "+91-98222-33445",
+      "relationship": "Parent",
+      "isEmergencyContact": true,
+      "priority": 2,
+      "alertsEnabled": true
+    }
+  ],
+  "emergency_numbers": [
+    {
+      "id": "num-in-112",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "National Emergency All-in-One",
+      "number": "112",
+      "category": "All-in-One",
+      "source": "Ministry of Home Affairs (ERSS)",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-181",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Women Helpline (Sakhi / Universal)",
+      "number": "181",
+      "category": "Women Safety",
+      "source": "Ministry of Women & Child Development",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-1091",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Women in Distress Helpline",
+      "number": "1091",
+      "category": "Women Safety",
+      "source": "State Police Command",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-100",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Police Emergency",
+      "number": "100",
+      "category": "Police",
+      "source": "National Police Gazette",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-108",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Emergency Medical & Disaster Ambulance",
+      "number": "108",
+      "category": "Ambulance",
+      "source": "National Health Mission",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-1090",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Women Power Line (Anti-Harassment)",
+      "number": "1090",
+      "category": "Women Safety",
+      "source": "Women Power Line Command",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-in-101",
+      "country": "India",
+      "countryCode": "+91",
+      "service": "Fire & Rescue Brigade",
+      "number": "101",
+      "category": "Fire & Rescue",
+      "source": "Civil Defence & Fire Services",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-us-911",
+      "country": "United States",
+      "countryCode": "+1",
+      "service": "National Emergency 911",
+      "number": "911",
+      "category": "All-in-One",
+      "source": "NENA / FCC",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-us-dv",
+      "country": "United States",
+      "countryCode": "+1",
+      "service": "National Domestic Violence Hotline",
+      "number": "1-800-799-7233",
+      "category": "Women Safety",
+      "source": "NDVH",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-uk-999",
+      "country": "United Kingdom",
+      "countryCode": "+44",
+      "service": "UK Emergency Services",
+      "number": "999",
+      "category": "All-in-One",
+      "source": "Home Office",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-uk-da",
+      "country": "United Kingdom",
+      "countryCode": "+44",
+      "service": "National Domestic Abuse Helpline",
+      "number": "0808 2000 247",
+      "category": "Women Safety",
+      "source": "Refuge UK",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-au-000",
+      "country": "Australia",
+      "countryCode": "+61",
+      "service": "Triple Zero (000) Emergency",
+      "number": "000",
+      "category": "All-in-One",
+      "source": "ACMA",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-au-1800",
+      "country": "Australia",
+      "countryCode": "+61",
+      "service": "1800RESPECT National Sexual Assault Line",
+      "number": "1800 737 732",
+      "category": "Women Safety",
+      "source": "Dept of Social Services",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-ae-999",
+      "country": "United Arab Emirates",
+      "countryCode": "+971",
+      "service": "Police Emergency",
+      "number": "999",
+      "category": "Police",
+      "source": "Dubai / Abu Dhabi Police",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-ae-wcd",
+      "country": "United Arab Emirates",
+      "countryCode": "+971",
+      "service": "Dubai Foundation for Women & Children",
+      "number": "800 111",
+      "category": "Women Safety",
+      "source": "DFWAC",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-sg-999",
+      "country": "Singapore",
+      "countryCode": "+65",
+      "service": "Police Emergency",
+      "number": "999",
+      "category": "Police",
+      "source": "Singapore Police Force",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    },
+    {
+      "id": "num-sg-scwo",
+      "country": "Singapore",
+      "countryCode": "+65",
+      "service": "National Anti-Violence & Harassment Helpline",
+      "number": "1800 777 0000",
+      "category": "Women Safety",
+      "source": "MSF Singapore",
+      "verified": true,
+      "lastVerified": "2026-03-01"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "fac-01",
+      "name": "One Stop Centre (Sakhi) - Safdarjung",
+      "category": "women_centre",
+      "latitude": 28.5684,
+      "longitude": 77.2069,
+      "address": "Safdarjung Hospital Campus, Ring Road, New Delhi 110029",
+      "phone": "+91-11-26165060",
+      "verified": true,
+      "operatingHours": "24/7 All Days",
+      "services": [
+        "Crisis Intervention",
+        "Medical Aid",
+        "Legal Counseling",
+        "Temporary Shelter"
+      ]
+    },
+    {
+      "id": "fac-02",
+      "name": "Hauz Khas Police Station - Women Help Desk",
+      "category": "police",
+      "latitude": 28.5494,
+      "longitude": 77.2001,
+      "address": "Police Station Hauz Khas, New Delhi 110016",
+      "phone": "+91-11-26510077",
+      "verified": true,
+      "operatingHours": "24/7 Dedicated Women Desk",
+      "services": [
+        "FIR Registration",
+        "Immediate Patrol Dispatch",
+        "Zero FIR Assistance"
+      ]
+    },
+    {
+      "id": "fac-03",
+      "name": "AIIMS Trauma Centre & Emergency Department",
+      "category": "hospital",
+      "latitude": 28.5672,
+      "longitude": 77.1956,
+      "address": "Ch. Jhandu Singh Marg, Raj Nagar, Safdarjung Enclave, New Delhi 110029",
+      "phone": "+91-11-26731000",
+      "verified": true,
+      "operatingHours": "24/7 Level 1 Emergency Trauma Care",
+      "services": [
+        "Level 1 Trauma Care",
+        "Forensic MLC Support",
+        "ICU",
+        "Ambulance Hub"
+      ]
+    },
+    {
+      "id": "fac-04",
+      "name": "CATS Emergency Ambulance Deployment Unit",
+      "category": "ambulance",
+      "latitude": 28.5701,
+      "longitude": 77.2105,
+      "address": "Ring Road Sector Base, New Delhi",
+      "phone": "102 / 108",
+      "verified": true,
+      "operatingHours": "24/7 Rapid Response",
+      "services": [
+        "Advanced Life Support (ALS)",
+        "Immediate On-Site Evacuation"
+      ]
+    },
+    {
+      "id": "fac-05",
+      "name": "Delhi Fire & Rescue Post - Bhikaji Cama",
+      "category": "fire",
+      "latitude": 28.568,
+      "longitude": 77.187,
+      "address": "Africa Avenue, Bhikaji Cama Place, New Delhi 110066",
+      "phone": "101",
+      "verified": true,
+      "operatingHours": "24/7 Active Fire Service",
+      "services": [
+        "Fire Extinction",
+        "Urban Rescue Operations"
+      ]
+    }
+  ],
+  "active_sos": null,
+  "emergency_history": [],
+  "active_timer": null,
+  "active_journey": null,
+  "location_shares": {},
+  "evidence_vault": [],
+  "storage_metrics": {
+    "allocatedBytes": 1073741824000,
+    "usedBytes": 0,
+    "fileCount": 0,
+    "bucketName": "ai-studio-kawach-vault",
+    "cloudProvider": "Firebase Cloud Storage / Google Cloud Object Storage"
+  },
+  "audit_logs": [
+    {
+      "id": "audit-init-01",
+      "timestamp": "2026-10-02T08:00:00.000Z",
+      "actor": "SYSTEM",
+      "action": "SYSTEM_INITIALIZED",
+      "details": "Kawach personal safety shield initialized for user Mani Ranjan Thakur"
+    }
+  ]
+}

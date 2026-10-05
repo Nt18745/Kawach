@@ -1,0 +1,15 @@
+{
+  "name": "Remix Kawach",
+  "description": "Kawach (कवच) — Official Women \u0026 Personal Safety Network. One-tap emergency SOS, Google Maps grounded emergency facilities, live tracking, and 24/7 AI safety companion.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone",
+    "camera",
+    "display-capture",
+    "clipboard-read",
+    "bluetooth"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

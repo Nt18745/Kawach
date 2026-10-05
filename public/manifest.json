@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Kawach — Women & Personal Safety Network",
+  "short_name": "Kawach",
+  "description": "Kawach (कवच) — Your Guardian Safety Shield. Emergency assistance, Google Maps grounded facilities, live tracking, and personal protection.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "categories": ["utilities", "lifestyle", "navigation"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
